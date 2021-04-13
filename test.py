@@ -3,10 +3,10 @@
 import sqlite3 
 
 # Create a function
-def select_all():
+def LowRisk():
 	with sqlite3.connect("db/stockmarket.db") as db:
 		cursor = db.cursor()
-		cursor.execute("select StockName,Risk,Description,Cost from stockList where Risk = 'Low' ")
+		cursor.execute("select StockName,Description,Cost from stockList where Risk = 'Low' ")
 		StockLow = cursor.fetchall()
 
 	# print the entire list of medalists
@@ -17,4 +17,4 @@ def select_all():
 		print(RiskLow)
 
 #Run the function
-select_all()
+LowRisk()

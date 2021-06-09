@@ -25,7 +25,7 @@ def createList():
     try:
       money = float(input('How much money would you like to invest? \n $'))
     except ValueError:
-        print ('An error occured. \nMake sure you didnt accidentally type something that isnt a digit')
+        print ('An error occurred. \nMake sure you didnt accidentally type something that isnt a digit')
 
   while Time == 0:
     try:
